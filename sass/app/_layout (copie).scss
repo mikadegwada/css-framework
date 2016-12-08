@@ -1,0 +1,188 @@
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	background-color: $bg_color;
+
+
+}
+
+.sidebar_is_open {
+
+}
+
+.site_container {
+	
+	height: 100%;
+	overflow: hidden;
+}
+
+.site_pusher {
+
+	height: 100%;
+	
+}
+
+
+.header {
+	z-index: 1;
+	
+	.menu {
+	}
+	
+}
+
+.site_content {
+	position: relative;
+
+
+}
+
+.main {
+	position: relative;
+	top: -20px;
+	overflow-y: scroll;
+	height: 100%;
+	padding-top: 10px;
+
+
+
+
+	.section {
+		margin: 0 50px;
+		padding-top: 0;
+		min-height: 1000px;
+	}
+
+	
+}
+body.is_at_home .main {
+	
+	padding-top: 30px;
+	.section {
+		
+		padding-top: 20px;
+		
+	}
+
+}
+.footer{
+
+	position: fixed;
+	left: 0;right: 0;bottom: 0;
+	height: 0;
+	text-align: right;
+
+	.icon {
+		position: absolute;
+		display: inline-block;
+		right: 30px;
+		top: -45px;
+		transform: translateY(0);
+		transition: transform $nav_speed*1.5 cubic-bezier(0.075, 0.82, 0.165, 1);
+		color: white;
+		z-index: 1;
+
+		span.mdicon {
+			display: inline-block;
+			padding: 0;
+			margin: 0;
+			box-shadow: 0 0 2px black;
+			background-color: rgba(255,255,255,1);
+			transform: scale(0.8);
+		}
+	}
+	
+	.cache_rotate {
+		position: absolute;
+		right: 0;bottom: 0;
+		height: 50px;
+		width: 101vw;
+		text-align: right;
+		background-color: $nav_color;
+		-webkit-backface-visibility: hidden;
+		outline: 1px solid transparent;
+		transform: translate3d(0, 0, 0) rotate(-2deg);
+		transform-origin: right top;
+		transition: transform $nav_speed*0.5 ;
+	}
+}
+.hide .footer {
+		
+		.icon {
+			transform: translateY(45px);
+			transition: transform $nav_speed*0.5;
+		}
+		
+		.cache_rotate {
+			
+			transform: translate3d(0, 49px, 0) rotate(0);
+			}
+}
+ 
+ 
+.bot_scroll.hide .footer , .bot_scroll .footer {
+		
+		.icon {
+			transform: translateY(0);
+			transition: transform $nav_speed*1.5 cubic-bezier(0.075, 0.82, 0.165, 1);
+			
+		}
+		
+		.cache_rotate {
+			
+			transform: translate3d(0, 0, 0) rotate(-2deg);
+			
+			}
+}
+
+
+
+
+@media only screen and (max-width: 601px) {
+
+
+	body {
+		overflow: hidden;
+	}
+	span.copyright {
+		font-size: 12px;
+	}
+	
+	.main {
+		position: absolute;
+		left: 0;
+		top: 0;
+		height: 100%;
+		margin: 0;
+		overflow-y: scroll;
+		padding-top: 50px;
+
+		.section {
+			
+			margin: 0 ;
+			margin-top: 50px;
+			padding: 0 10px;
+			
+		}
+	
+	}
+	
+
+}
+
+@media only screen and (max-width: 450px) {
+
+
+	span.copyright {
+		font-size: 8px;
+	}
+	
+}

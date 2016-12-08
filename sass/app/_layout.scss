@@ -1,0 +1,55 @@
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	background-color: $bg_color;
+
+
+}
+
+.site_container {
+	
+	height: 100%;
+	overflow: hidden;
+}
+
+.site_pusher {
+
+	height: 100%;
+}
+
+.site_content {
+	position: relative;
+}
+.header {
+	a{text-decoration: none;color: inherit;}
+}
+.main {
+	z-index: 2;
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	margin: 0;
+	overflow-y: scroll;
+	padding-top: 50px;
+
+
+}
+.section {
+	
+	
+	margin: 0 ;
+	margin-top: 80px;
+	padding: 0 10px;
+	margin-bottom: 60px;
+			
+}
+

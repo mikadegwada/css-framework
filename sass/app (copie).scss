@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+
+
+@import "app/variables";
+
+
+$color1 : #5EB5B2;
+$color2 : #9068be;
+$color3 : #F0E3C8;
+$color4 : #e62739;
+
+$bg_color : $color3;
+$nav_text : white;
+$nav_color : $color1;
+$nav_indicator : $color4;
+
+$sidebar_color : $color2;
+$search_color : $color2;
+
+
+@import "app/layout";
+@import "app/sidebar";
+@import "app/header";
+@import "app/search";
+@import "app/hamburger";
+
